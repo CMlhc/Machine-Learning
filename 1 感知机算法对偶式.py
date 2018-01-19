@@ -5,7 +5,7 @@ Created on Fri Jan 19 08:58:16 2018
 @author: Lenovo
 
 感知机算法对偶式
-Python 2.7
+Python 3.6
 
 """
 
@@ -48,7 +48,7 @@ def update(i):
     global a, b
     a[i] += 1   #ai=ai+1
     b = b + y[i]  #bi=b+yi*1
-    print a,b
+    print(a,b)
 
 
 #误分条件
@@ -68,7 +68,7 @@ def check():
             update(i)
     if not flag:
         w = np.dot(a * y, x)
-        print "RESULT: w: " + str(w) + " b: " + str(b)
+        print("RESULT: w: " + str(w) + " b: " + str(b))
         return False
     return True
 
