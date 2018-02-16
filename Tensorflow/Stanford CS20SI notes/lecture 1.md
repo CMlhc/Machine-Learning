@@ -1,11 +1,11 @@
 # Introduction to Tensorflow
 
-### 1 tensor
+### 1 Tensor
 - 0-d number
 - 1-d vector
 - 2-d matrix
 
-### 2 data flow graphs
+### 2 Data flow graphs
 
 ```
 graph LR
@@ -26,7 +26,7 @@ with tf.Session() as sess:
     
 ```
 
-### 3 more graphs
+### 3 More graphs
 
 ```
 graph LR
@@ -73,7 +73,7 @@ print(sess.run(c))
 ```
 
 
-### 5 build more than one graph
+### 5 Build more than one graph
 ```python
 # to add operators to a graph, set it as default:
 g = tf.Graph()
